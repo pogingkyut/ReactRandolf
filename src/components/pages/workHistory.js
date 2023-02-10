@@ -56,7 +56,7 @@ const data = [
 const workHistory = () => {
     return (
         <div id='workHistory' className="workHistory" style={{minWidth:'350px', maxWidth:'700px', 
-          marginLeft: 'auto', marginRight: 'auto'}}>            
+          marginLeft: 'auto', marginRight: 'auto', paddingTop: '80px'}}>            
             <div>
                 <h3>Work History</h3>
                 {data.map((d) => {

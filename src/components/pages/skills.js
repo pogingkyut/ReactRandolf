@@ -5,7 +5,7 @@ import { Descriptions } from "antd";
 const skills = () => {
     return (
         <div id='skills' className="skills" style={{minWidth:'350px', maxWidth:'700px', 
-          marginLeft: 'auto', marginRight: 'auto'}}>
+          marginLeft: 'auto', marginRight: 'auto', paddingTop: '80px'}}>
             <Descriptions title='Programming Skills' bordered >
                 <Descriptions.Item label='Python' span={1}></Descriptions.Item>
                 <Descriptions.Item label='Django' span={1}></Descriptions.Item>

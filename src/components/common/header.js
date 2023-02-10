@@ -3,57 +3,31 @@ import { Layout, Menu } from 'antd';
 
 const header = () => {
 
-    // const items = [
-    //     {
-    //         key: 1,
-    //         label: 'Home'
-    //     },
-    //     {
-    //         key: 2,
-    //         label: 'About'
-    //     },
-    //     {
-    //         key: 3,
-    //         label: 'Skills'
-    //     }
-    // ]
-
     const { Header } = Layout;
 
     return (
-        <div className="header">
+        <div className="header" style={{
+            position: 'sticky',
+            top: 0,
+            zIndex: 1,
+            width: '100%'
+        }}>
             <Header>
                 <div className="logo"><h1>Randolf Santiago</h1></div>
                 <Menu
-                 theme="dark"
-                 mode="horizontal"
-                 defaultSelectedKeys={['1']}
-                 style={{justifyContent:'right'}}
-                 items={[
-                    {
-                        key: '/',
-                        label: 'Home'
-                    },
-                    {
-                        key: '2',
-                        label: 'About'
-                    },
-                    {
-                        key: '3',
-                        label: 'Skills'
-                    },
-                    {
-                        key: '/workHistory',
-                        label: 'Work History'
-                    }
-                 ]}
-                 onClick={(key)=>{
-                    console.log (key)
-                    if (key==='1') {
-                        console.log ('yes')
-                    }
-                 }}
-               />
+                    theme="dark"
+                    mode="horizontal"
+                    style={{
+                        justifyContent: 'right'
+                    }}
+                    defaultSelectedKeys={['1']}
+                >
+                    <Menu.Item key='1'><a href="#personalInfo">Home</a></Menu.Item>
+                    <Menu.Item key='2'><a href='#about'>About</a></Menu.Item>
+                    <Menu.Item key='3'><a href="#skills">Skills</a></Menu.Item>
+                    <Menu.Item key='4'><a href="#workHistory">Work History</a></Menu.Item>
+                    <Menu.Item key='5'><a href="#contact">Contact</a></Menu.Item>
+                </Menu>
             </Header>
         </div>
     );

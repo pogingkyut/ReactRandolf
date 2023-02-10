@@ -6,8 +6,17 @@ import image from '../../assets/images/photo.jpg';
 
 const personalInfo = () => {
     return (
-        <div id='personalInfo' className="personalInfo" style={{minWidth:'350px', maxWidth:'700px', 
-          marginLeft: 'auto', marginRight: 'auto'}}>
+        <div 
+          id='personalInfo' 
+          className="personalInfo" 
+          style={{
+            minWidth:'350px', 
+            maxWidth:'700px', 
+            marginLeft: 'auto', 
+            marginRight: 'auto'
+            // paddingTop: '80px'
+          }}
+        >
             <div style={{
                 textAlign: 'center'
             }}>
