@@ -1,12 +1,20 @@
 import React from "react";
 import { Descriptions, Image } from "antd";
 
+import image from '../../assets/images/photo.jpg';
+
 
 const personalInfo = () => {
     return (
-        <div id='personalInfo' className="personalInfo" style={{width:'30%', 
+        <div id='personalInfo' className="personalInfo" style={{minWidth:'350px', maxWidth:'700px', 
           marginLeft: 'auto', marginRight: 'auto'}}>
-            <Image></Image>
+            <div style={{
+                textAlign: 'center'
+            }}>
+            <Image src={image} style={{
+                objectFit: 'contain',
+            }}></Image>
+            </div>
             <Descriptions title='Basic Information' bordered >
                 <Descriptions.Item label='Full Name' span={3}>Randolf Laza Santiago</Descriptions.Item>
                 <Descriptions.Item label='Birthdate' span={3}>August 5, 1985</Descriptions.Item>

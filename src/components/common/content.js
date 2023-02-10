@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 
 import PersonalInfo from '../pages/personalInfo';
 import Skills from '../pages/skills';
+import WorkHistory from '../pages/workHistory';
 
 const { Content } = Layout;
 
@@ -12,6 +13,7 @@ const content = () => {
             <Content>
                 <PersonalInfo />
                 <Skills />
+                <WorkHistory />
             </Content>
         </div>
     );

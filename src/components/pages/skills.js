@@ -1,12 +1,11 @@
 import React from "react";
-import { Descriptions, Image } from "antd";
+import { Descriptions } from "antd";
 
 
 const skills = () => {
     return (
-        <div id='personalInfo' className="personalInfo" style={{width:'30%', 
+        <div id='skills' className="skills" style={{minWidth:'350px', maxWidth:'700px', 
           marginLeft: 'auto', marginRight: 'auto'}}>
-            <Image></Image>
             <Descriptions title='Programming Skills' bordered >
                 <Descriptions.Item label='Python' span={1}></Descriptions.Item>
                 <Descriptions.Item label='Django' span={1}></Descriptions.Item>
@@ -15,6 +14,7 @@ const skills = () => {
                 <Descriptions.Item label='Javascript' span={1}></Descriptions.Item>
                 <Descriptions.Item label='PHP/MySQL' span={1}></Descriptions.Item>
             </Descriptions>
+            
             <Descriptions title='Computer Skills' bordered >
                 <Descriptions.Item label='Microsoft Office' span={1}></Descriptions.Item>
                 <Descriptions.Item label='Photoshop' span={1}></Descriptions.Item>
@@ -23,6 +23,7 @@ const skills = () => {
                 <Descriptions.Item label='PLC Programming' span={1}></Descriptions.Item>
                 <Descriptions.Item label='LAN Network setup' span={1}></Descriptions.Item>
             </Descriptions>
+
             <Descriptions title='Technical Skills' bordered >
                 <Descriptions.Item label='Motor Rebuild' span={1}></Descriptions.Item>
                 <Descriptions.Item label='Pneumatics' span={1}></Descriptions.Item>
